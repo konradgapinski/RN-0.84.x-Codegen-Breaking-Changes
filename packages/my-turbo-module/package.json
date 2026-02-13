@@ -1,0 +1,29 @@
+{
+  "name": "my-turbo-module",
+  "version": "0.0.1",
+  "description": "Minimal TurboModule with getConstants() and includesGeneratedCode: true, generated with RN < 0.84 codegen",
+  "main": "specs/NativeMyTurboModule",
+  "files": [
+    "specs",
+    "ios",
+    "android",
+    "*.podspec"
+  ],
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
+  },
+  "codegenConfig": {
+    "name": "MyTurboModuleSpec",
+    "type": "modules",
+    "jsSrcsDir": "specs",
+    "outputDir": {
+      "ios": "ios/generated",
+      "android": "android/generated"
+    },
+    "includesGeneratedCode": true,
+    "android": {
+      "javaPackageName": "com.myturbomodule"
+    }
+  }
+}
