@@ -2,7 +2,7 @@
 #import <React/RCTBridgeModule.h>
 #import <ReactCommon/RCTTurboModule.h>
 
-@interface MyTurboModule : NSObject <NativeMyTurboModuleSpec>
+@interface MyTurboModule : NativeMyTurboModuleSpecBase <NativeMyTurboModuleSpec>
 @end
 
 @implementation MyTurboModule
